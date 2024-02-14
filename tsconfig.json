@@ -1,31 +1,26 @@
 {
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"],
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "ts-node": {
     "compilerOptions": {
-        // то куда производится сборка
-        "outDir": "./dist/",
-        // подсвечивает все места где не указан тип
-        "noImplicitAny": true,
-        // какой модуль ECMAScript используем в проекте
-        "module": "esnext",
-        // версия стандарта ECMAScript в который по итогу код будет компилироваться
-        // для поддержки большинства браузеров
-        "target": "es5",
-        // позволяет писать jsx разметку
-        "jsx": "react-jsx",
-        // позволяет компилятору обрабатывать не только ts файлы, но и js
-        "allowJs": true,
-        "moduleResolution": "node",
-        // для абсолютного импорта
-        "baseUrl": ".",
-        // позволяет использовать привычный синтаксис импортов и экспортов ECMAScript
-        // вместо common js
-        "esModuleInterop": true,
-        // позволяет TypeScript интерпретировать импорты с синтаксисом
-        // import * as moduleName from 'modulePath' как экспорт по умолчанию
-        "allowSyntheticDefaultImports": true,
+      "module": "CommonJS",
     },
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS",
-        },
-    },
+  },
+  "include": [
+    "./src",
+    "./global.d.ts"
+  ]
 }
