@@ -1,7 +1,7 @@
-@import "reset";
-@import "variables/global";
-@import "themes/light";
-@import "themes/dark";
+@import "styles/reset";
+@import "styles/variables/global";
+@import "styles/themes/light";
+@import "styles/themes/dark";
 
 .app {
     min-height: 100vh;
